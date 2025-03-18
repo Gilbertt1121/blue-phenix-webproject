@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .parentbox{
+            display: flex;
+            border:1px solid red;
+        }
+        .parentbox .items{
+            background-color: red;
+            width: 200px;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="parentbox">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+    </div>
 </body>
 </html>
