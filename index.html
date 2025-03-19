@@ -6,187 +6,184 @@
     <title>Document</title>
     <link rel="Stylesheet" href="Stylesheet/activity.css">
     <style>
-        @keyframes slideDown {
-        0%{
-        transform: translateY(-100%);
-        }
-        100%{
-        transform: translateY(0);
-        }
-        }
-        .section,.footer{
+
+        .header,.section,.footer{
             /*border: 1px solid black;*/
-            display:flex;
+            display: flex;
         } 
-        /*.navbar{
+        .header{
             height: 92px;
             background-color: #043873;
             border: 1px solid black;
-            gap: 5px;
-        } */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            /*align-items: center;*/
-            background-color: #043873;
-            color: white;
             position: fixed;
+            width: 99%;
             top: 0;
-            width: 100%;
-            height: 92px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            animation: slideDown 0.6s ease-out;
+            justify-content: space-between;
+            padding-top: 20px;
         }
-
-        .navbar .logo img {
-            height: 80px;
-            width: 80px;
-        }
-
-        .navbar ul {
+        .ul{
             display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
         }
-        .navbar ul li {
-            margin: 0 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 60px;
+        .logo{
             height: 60px;
-        }
-        .navbar .home,
-        .navbar .about{
-             cursor: pointer;
-    
+            width: 80px;
+            padding-left: 20px;
         }
         .section{
             height: 400px;
             background-color: #d1d1d1;
+            width: 100%;
         }
         .section>.items{
             flex: 1;
             color:ivory;
-            font-size: 20px;
-            padding-top: 20%;
-            border: 1px solid red;
+            justify-content: center;
+            margin: 20px;          
         }
-        .dark1{
-            background-color: #043873;
-            height: 829px;
+        .section>.images{
+            justify-content: center;
+            margin: 20px;
+            padding-top: 150px;
         }
-        .white2{
-            height: 1588px;
-        }
-        .dark3,.dark8{
-            height: 800px;
-            background-color: #043873;
-        }
-        .dark4{
+        .section>.txt{
+            margin-top: 200px;
+        }    
+        .sec1{
+            background-color: #4f9bf9;
             height: 800px;
         }
-        .dark5{
+        .sec2{
+            height: 500px;
+            background-color: #c4defd;
+        }
+        .sec2a{
+            height: 500px;
+            background-color: #c4defd;
+        }
+        .sec3,.sec8{
+            height: 800px;
+            background-color: #4f9bf9;
+        }
+        .sec4{
+            height: 800px;
+        }
+        .sec5{
             height: 600px;
-            background-color: #043873;
-            justify-content: space-between;
+            background-color: #4f9bf9;
+            border: 1px solid black;
+            text-align: center;
+            padding-top: 200px;
         }
         .footer{
             height: 150px;
             background-color: #043873;
             border: 1px solid black;
             justify-content: center;
+            width: 100%;
         }      
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <img src="Assets/Images/1.png" alt="">
+    <div class="header">
+        <div>
+            <img src="Assets/Images/1.png" alt="" class="logo">
+        </div>
+        <div class="bname">
+            <h1>"Burger King"</h1>
         </div>
         <ul>
-            <a href="">Products</a>
-            <a href="">Solutions</a>    
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>    
         </ul>
     </div>
-    <div class="section dark1">
-        <div class="items">
+    <div class="section sec1">
+        <div class="items txt">
             <h1>Burger King</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quod explicabo nostrum mollitia iure, 
-                necessitatibus repellat numquam aspernatur beatae dolores fugit fuga animi, quis distinctio autem veritatis
-                 tempore repellendus eveniet?</p>
+            <p>Burger King has grown internationally, with thousands of locations in over 100 countries. The restaurant is known for its emphasis on the “Have It Your Way” slogan, allowing customers to customize their burgers to their liking
+                In addition to burgers, Burger King offers a variety of fast-food items, including fries, chicken nuggets, breakfast sandwiches, salads, milkshakes, and soft drinks.
+            </br>Over the years, the brand has introduced various innovative menu items and limited-time offers to attract customers.
+                The chain is also known for its playful and sometimes edgy advertising campaigns.               
+                With its distinctive red and yellow color scheme, Burger King stands as one of the key players in the fast-food industry, competing closely with other global chains like McDonald's and Wendy's.</p>
                  <div><center><a href=""><button type="button" id="btn">READ MORE</button></a></center></div>
         </div>
-        <div class="items">
-            <img src="Assets/Images/1.png" alt="" class="img" >
+        <div class="items images">
+            <img src="Assets/Images/12.jpg" alt="" class="img" >
         </div>
     </div>
-    <div class="section white2">
+    <div class="section sec2">
         <div class="items">
-            <div>
-                <h4>BURGER KING</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dignissimos ducimus iure rem possimus repellendus, quas, earum voluptate molestiae quam sequi, a reiciendis assumenda in? Eveniet, vitae. Voluptates, ex suscipit.</p>
-            </div>
-            <div>
-                <img src="Assets/Images/1.png" alt="" class="img1">
-            </div>
+            <img src="Assets/Images/1.png" alt="Lorem" class="imga">
+        </div>
+        <div id="txtsec2">
+            <h1 class="hsec2">VISION:</h1>
+            <p>"To be the global leader in the quick-service restaurant industry, delivering delicious, high-quality, and flame-grilled burgers to people everywhere
+                while continuously innovating to meet the evolving tastes and preferences of our customers."</p>
+        </div>
+    </div>
+    <div class="section sec2a">
+        <div id="txtsec2a">
+            <h1 class="hsec2">MISSION:</h1>
+            <p>"To be the global leader in the quick-service restaurant industry, delivering delicious, high-quality, and flame-grilled burgers to people everywhere 
+                while continuously innovating to meet the evolving tastes and preferences of our customers."</p>
         </div>
         <div class="items ">
-            <div>
-                <img src="Assets/Images/1.png" alt="" class="img2">
-            </div>
-            <div>
-                <h4>Burger King</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae dolorem laboriosam nesciunt excepturi deleniti quasi odit quod iste in, et recusandae porro ut distinctio perspiciatis maiores nisi voluptatum soluta inventore.</p>
-            </div>
+        </br>
+            <img src="Assets/Images/1.png" alt="" class="img2a">
         </div>
     </div>
-    <div class="section dark3">
-        <div class="items">
-            <h1>Burger King</h1>    
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quod explicabo nostrum mollitia iure, 
-                necessitatibus repellat numquam aspernatur beatae dolores fugit fuga animi, quis distinctio autem veritatis
-                 tempore repellendus eveniet?</p>
-            <div><center><a href=""><button type="button" id="btn">READ MORE</button></a></center></div>
+    <div class="section sec3">
+        <div class="items txt">
+            <h1>WHOPPER</h1>    
+            <h2>"Sa unang kagat tinapay lahat"</h2>
+            <p>Burger King's burgers are made with high-quality, flame-grilled beef patties that deliver a distinctive smoky flavor. From the iconic Whopper to a variety of customizable options, each burger is crafted to satisfy every craving. Whether you're looking for a classic beef burger, a crispy chicken sandwich, or a plant-based option like the Impossible Whopper,
+                Burger King offers something for everyone. With fresh ingredients and a range of delicious toppings, every burger is made to your liking, ensuring a flavorful experience with every bite.</p>
+            <div><center><a href=""><button type="button" id="btn">BUY NOW</button></a></center></div>
         </div>
-        <div class="items">
-            <img src="Assets/Images/1.png" alt="" class="img" >
-        </div>
-    </div>
-    <div class="section dark4">
-        <div class="items">
-            <img src="Assets/Images/1.png" alt="" class="img">
-        </div>
-        <div class="items">
-            <h1>Burger King</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quod explicabo nostrum mollitia iure, 
-                necessitatibus repellat numquam aspernatur beatae dolores fugit fuga animi, quis distinctio autem veritatis
-                 tempore repellendus eveniet?</p>
-                 <div><center><a href=""><button type="button" id="btn">READ MORE</button></a></center></div>
+        <div class="items images">
+            <img src="Assets/Images/8.jpg" alt="" class="img" >
         </div>
     </div>
-    <div class="section dark5">
-        <div><h1>Burger King</h1></div></br>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quod explicabo nostrum mollitia iure, 
-                necessitatibus repellat numquam aspernatur beatae dolores fugit fuga animi, quis distinctio autem veritatis
-                 tempore repellendus eveniet?</p>
-            <div><center><a href=""><button type="button" id="btn">READ MORE</button></a></center></div>
+    <div class="section sec4">
+        <div class="items images">
+            <img src="Assets/Images/8.jpg" alt="" class="img">
+        </div>
+        <div class="items txt">
+            <h1 class="hsec2">WHOPPER</h1>
+            <h2 class="hsec2">"Sa unang kagat tinapay lahat"</h2>
+            <p >Burger King's burgers are made with high-quality, flame-grilled beef patties that deliver a distinctive smoky flavor. From the iconic Whopper to a variety of customizable options, each burger is crafted to satisfy every craving. Whether you're looking for a classic beef burger, a crispy chicken sandwich, or a plant-based option like the Impossible Whopper,
+                Burger King offers something for everyone. With fresh ingredients and a range of delicious toppings, every burger is made to your liking, ensuring a flavorful experience with every bite.</p>
+                 <div><center><a href=""><button type="button" id="btn">BUY NOW</button></a></center></div>
+        </div>
+    </div>
+    <div class="sec5">
+        <div><h1>MORE PRODUCTS?</h1></div>
+            <div><p>
+                Burger King's Menu offers a wide variety of delicious options to suit every taste. Known for its flame-grilled burgers, including the iconic Whopper, Burger King also features a range of other satisfying items:
+                Flame-Grilled Burgers: From the classic Whopper to customizable options like the Bacon King and Double Cheeseburger, all burgers are made with high-quality beef patties grilled to perfection.
+                Impossible Whopper: A plant-based alternative to the classic Whopper, made with a delicious plant-based patty for those looking for a vegetarian option.
+                Chicken Sandwiches: Enjoy a crispy, breaded chicken sandwich or spice things up with the Spicy Crispy Chicken Sandwich, featuring a flavorful chicken patty with a hint of heat.
+                Sides: Complement your meal with crispy French fries, onion rings, or a side salad.
+                Breakfast Items: Start your day with a Breakfast Bacon King, Croissan'wich, or a delicious pancake platter.
+                King Jr. Meals: Burger King’s kids’ menu offers smaller versions of their classic burgers and chicken nuggets, perfect for younger appetites.
+                Drinks & Desserts: Quench your thirst with a variety of drinks, including soft drinks, milkshakes, and Iced Coffee, or satisfy your sweet tooth with a Hershey’s Sundae Pie.
+            </p>
+            <div><center><a href=""><button type="button" id="btn">VIEW MORE</button></a></center></div>
         </div>
     </div>
 
+    <div class="section">Banner</div>
     <div class="section">Banner </div>
-    <div class="section">Banner </div>
-    <div class="section dark8">
-        <div class="items">
-            <h1>Burger King</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quod explicabo nostrum mollitia iure, 
-                necessitatibus repellat numquam aspernatur beatae dolores fugit fuga animi, quis distinctio autem veritatis
-                 tempore repellendus eveniet?</p>
-            <div><center><a href=""><button type="button" id="btn">READ MORE</button></a></center></div>
+    <div class="section sec8">
+        <div class="items txt">
+            <h1>Location</h1>
+            <p>Burger King has a branch located in SM City Baguio, offering a variety of their signature flame-grilled burgers and other menu items.  <br>           
+                <br>Address: Lower Ground Floor, Expansion, SM City Baguio, Luneta Hill, Upper Session Road, Baguio City, Benguet, 2600 <br>
+                <br>Store Hours: 10:00 AM – 9:00 PM, Monday to Thursday; 10:00 AM – 10:00 PM, Friday to Sundaybr <br>   
+                <br>Contact: (074) 619-8511; Email: bk3039@burgerking.com.ph</p>
+            <div><center><a href=""><button type="button" id="btn">EMAIL US</button></a></center></div>
         </div>
-        <div class="items">
-            <img src="Assets/Images/1.png" alt="" class="img">
+        <div class="items images">
+            <img src="Assets/Images/13.jpg" alt="" class="img">
         </div>
     </div>
     <div class="footer">
