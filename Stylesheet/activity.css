@@ -1,25 +1,31 @@
 h1{
     color: #ffe492;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h2{
     text-align: center;
     color: #ffe492;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .hsec2{
     color: #043873;
 }
 h3{
     color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
 }
 p{
     font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .section2a>.pt{
     color: black;
+    font-family: 'Times New Roman', Times, serif;
 }
 .mid{
     color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 .nav{
     color: white;
