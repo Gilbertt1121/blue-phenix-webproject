@@ -14,21 +14,36 @@ h3{
 }
 p{
     font-size: 18px;
-    padding: 16px;
 }
-a{
+.section2a>.pt{
+    color: black;
+}
+.mid{
+    color: white;
+}
+.nav{
     color: white;
     padding: 30px;
 }
 .img{
     height: 450px;
     width: 80%;
-    border: 3px solid #ffe492;
+    border: 1px solid black;
     justify-content: center;
+    margin-left: 50px;
 }
 .img1,.img2{
-    height: 300px;
-    padding-left: 150px;
+    height: 400px;
+    width: 400px;
+}
+.img1{
+    padding-left: 100px;
+    margin-top: 75px; 
+}
+.img2{
+    margin-bottom: 175px;
+    padding-right: 100px;
+    margin-left: 50px;
 }
 .imga{
     height: 300px;
@@ -37,11 +52,38 @@ a{
     margin-left: 50px;
     border: 3px solid black;
 }
-.img2a{
-    height: 300px;
-    width: 300px;
-    margin-right: 100px;
-    border: 3px solid black;
+.img6,.img7{
+    height: 400px;
+    width: 400px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+}
+.img6{
+    margin-top: 100px;
+    margin-left:100px;
+}
+.img7{
+    height: 100px;
+    width: 100px;
+}
+.images7{
+    margin-left: 300px;
+    margin-top: 200px;
+}
+.txt6{
+    margin-left: 50px;
+    padding-left: 50px;
+    text-align: center;
+}
+.txt1{
+    padding: 100px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.txt1a{
+    padding: 100px;
+    text-align: center;
+    padding-top: 175px;
 }
 #txtsec2,#txtsec2a{
     padding: 40px;
@@ -54,6 +96,19 @@ a{
     height: 50px;
     width: 150px;
 }
+#btn1{
+    height: 40px;
+    margin-right: 40px;
+    margin-top: 15px;
+    width: 80px;
+    background-color: #ffe492;
+}
+
+
+
+
+
+
 
 
 
