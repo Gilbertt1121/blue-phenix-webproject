@@ -122,6 +122,7 @@ img {
         display: none;
         flex-direction: column;
         width: 100%;
+
     }
 
     .menu.show {
