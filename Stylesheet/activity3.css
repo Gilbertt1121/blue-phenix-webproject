@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    padding: 0 20px;
+}
+
+.header {
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.menu-toggle {
+    display: none;
+    background: #DA291C;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.menu button {
+    background: #DA291C;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.hero,
+.section,
+.testimonials,
+.footer {
+    background: rgb(236, 179, 8);
+    padding: 30px 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.footer{
+    background-color: #DA291C;
+}
+
+.cta {
+    background: #DA291C;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.text-box,
+.vector-box {
+    background: white;
+    padding: 15px;
+    flex: 1 1 300px;
+}
+
+.testimonials-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+.testimonial {
+    background: #FFFFFF;
+    padding: 1.5rem;
+    flex: 1 1 30%;
+    min-width: 250px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+}
+
+img {
+    max-width: 76%;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* @media all{} */
+    /* @media print{} */
+    /* @media speech{}  */
+    /* Media FEATURES
+    width,heaght,oreintaiton,resolution, */
+    /* @media screen and (orientation=landscape) {
+        body {
+            background-color: tomato;
+        }
+    } */
+
+    @media screen and (width <=480px) {
+        body {
+            background-color: blue;
+        }
+
+        #container {
+            display: flex;
+            border: 1px solid red;
+            flex-flow: column wrap;
+        }
+
+        .items {
+            flex: 1;
+            background-color: tomato;
+        }
+    }
+
+
+    @media screen and (width >=481px) and (width <=760px) {
+        body {
+            background-color: olivedrab;
+
+            #container {
+                display: flex;
+                border: 1px solid red;
+                flex-flow: row wrap;
+                gap: 70px;
+            }
+
+            .items {
+                flex: 1;
+                background-color: tomato;
+            }
+        }
+    }
+
+    @media screen and (width >=760px) and (width <=1024px) {
+        body {
+            background-color: yellow;
+            #container {
+                display: flex;
+                border: 1px solid red;
+                flex-flow: row wrap;
+                gap: 500px;
+            }
+
+            .items {
+                flex: 1;
+                background-color: tomato;
+            }
+        }
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque magnam incidunt voluptas iste numquam, iusto
+            reiciendis pariatur? Molestias ut maiores illum quos quam laudantium facere, quaerat dicta dolores. Et,
+            deleniti!</p>
+    </div>
+
+</body>
+
+</html>
