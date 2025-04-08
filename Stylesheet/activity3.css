@@ -32,11 +32,11 @@ body {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    
+
 }
 
 .menu button {
-    background: #DA291C;
+    background: rgb(220, 128, 95);
     color: white;
     border: none;
     padding: 10px 15px;
